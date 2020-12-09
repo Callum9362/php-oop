@@ -1,5 +1,5 @@
 <?php
-   
+   // Ref - https://www.w3schools.com/php/php_ref_string.asp
    // A basic class with getters and setters
    class Word {
       /* Member variables */
@@ -16,9 +16,19 @@
       function chop(){
         echo chop($this->word, "World!")    ."<br/>";
      }
+     
+     function countChars(){
+      echo count_chars($this->word, 3)    ."<br/>";
+   }
+
+   function encString(){
+    echo sha1($this->word)    ."<br/>";
+ }
       
    }
    $word1 = new Word("Hello World");
    $word1->addSlashes();
    $word1->chop();
+   $word1->countChars();
+   $word1->encString();
 ?>
