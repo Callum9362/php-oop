@@ -6,3 +6,4 @@
 
 # Recipe Class - A basic recipe class with a constructor (my preferred method on starting a basic class)
 
+# Word Class - A class to perform multiple string manipulations on.
