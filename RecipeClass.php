@@ -12,17 +12,17 @@
      }
       
       function getTime(){
-         echo $this->time ."<br/>";
+         return $this->time ."<br/>";
       }
       
       function getTitle(){
-         echo $this->title ." <br/>";
+         return  $this->title ." <br/>";
       }
    }
 
 
    $recipe = new Recipe("Cake", "1 hour");
-   $recipe->getTime();
+   echo $recipe->getTime();
    echo "<br>";
-   $recipe->getTitle();
+   echo $recipe->getTitle();
 ?>

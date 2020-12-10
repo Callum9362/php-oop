@@ -10,25 +10,24 @@
      }
       
       function addSlashes(){
-         echo addcslashes($this->word, 'A..z')    ."<br/>";
+         return addcslashes($this->word, 'A..z')    ."<br/>";
       }
 
       function chop(){
-        echo chop($this->word, "World!")    ."<br/>";
+         return chop($this->word, "World!")    ."<br/>";
      }
      
      function countChars(){
-      echo count_chars($this->word, 3)    ."<br/>";
+      return count_chars($this->word, 3)    ."<br/>";
    }
 
    function encString(){
-    echo sha1($this->word)    ."<br/>";
- }
+      return sha1($this->word)    ."<br/>";
+   }
       
    }
    $word1 = new Word("Hello World");
-   $word1->addSlashes();
-   $word1->chop();
-   $word1->countChars();
-   $word1->encString();
-?>
+   echo $word1->addSlashes();
+   echo $word1->chop();
+   echo $word1->countChars();
+   echo $word1->encString();

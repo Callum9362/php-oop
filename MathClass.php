@@ -12,27 +12,26 @@
      }
       
       function add(){
-         echo $this->num1 + $this->num2 ."<br/>";
+         return $this->num1 + $this->num2 ."<br/>";
       }
       
       function subtract(){
-        echo $this->num1 - $this->num2 ." <br/>";
+        return $this->num1 - $this->num2 ." <br/>";
       }
       
       function multiply(){
-        echo $this->num1 * $this->num2 ." <br/>";
+        return $this->num1 * $this->num2 ." <br/>";
       }
 
       function divide(){
-        echo $this->num1 / $this->num2 ." <br/>";
+        return $this->num1 / $this->num2 ." <br/>";
       }
    }
 
 
    $math1 = new Math(5, 7);
-   $math1->add();
-   $math1->subtract();
-   $math1->multiply();
-   $math1->divide();
-   echo "<br>";
+   echo $math1->add();
+   echo $math1->subtract();
+   echo $math1->multiply();
+   echo $math1->divide();
 ?>
